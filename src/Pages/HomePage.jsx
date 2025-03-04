@@ -1,10 +1,26 @@
-import React from 'react'
+import React from "react";
+import banner from '../assets/images/banner.jpg'
 
-
+import FirstNav from "../Components/FirstNav";
+import SecondNav from "../Components/SecondNav";
 function HomePage() {
   return (
-  <h1 className='text-red-500 bg-red-600'>Hello</h1>
-  )
+    <div className="wrapper w-full h-auto">
+      {/* Navbar section */}
+      <FirstNav />
+      <SecondNav/>
+
+      {/* Banner Section  */}
+      <section className="w-full h-[400px]">
+        <img src={banner} className="w-full h-full object-cover"/>
+
+      </section>
+
+
+     
+     
+    </div>  
+  );
 }
 
-export default HomePage
+export default HomePage;
